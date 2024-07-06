@@ -1,0 +1,190 @@
+// @import "../../_globalColor";
+
+// .card-image {
+//   max-width: 100%;
+//   height: auto;
+//   width: 460px;
+// }
+// .card-title {
+//   color: $titleColor;
+//   font-size: 1.375rem;
+//   line-height: 24px;
+//   font-weight: 700;
+//   margin: 15px 0 0 0;
+// }
+// .card-subtitle {
+//   color: $cardSubtitle;
+//   font-size: 1.063rem;
+//   line-height: 1.5rem;
+// }
+// .certificate-card {
+//   background-color: $lightBackground2;
+//   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+//   padding: 1.5rem;
+//   border-radius: 10px;
+//   border: 1px solid $lightBorder1;
+//   -webkit-transition: all 0.3s ease;
+//   -o-transition: all 0.3s ease;
+//   transition: all 0.3s ease;
+// }
+// .certificate-detail-div {
+//   text-align: center;
+// }
+// .certificate-card:hover {
+//   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+// }
+// .dark-mode.certificate-card:hover {
+//   box-shadow: $achievementCertificateCardHoverDark 0px 20px 30px -10px;
+// }
+// .certificate-image-div {
+//   position: relative;
+//   height: 250px;
+//   overflow: hidden;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+// .achievement-cards-div {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+//   gap: 1rem 1rem;
+// }
+// .certificate-card-footer {
+//   display: flex;
+//   align-items: center;
+//   flex-wrap: wrap;
+//   justify-content: center;
+// }
+// .certificate-card-footer span.certificate-tag {
+//   background: $buttonColor;
+//   color: $lightBackground3;
+//   vertical-align: middle;
+//   align-items: center;
+//   border-radius: 4px;
+//   display: inline-flex;
+//   font-size: 0.75rem;
+//   height: 2em;
+//   justify-content: center;
+//   white-space: nowrap;
+//   line-height: 1.5;
+//   margin: 0 0.5rem 0.5rem 0;
+//   padding: 0 0.75em;
+//   cursor: pointer;
+//   transition: 0.2s ease-in;
+// }
+// span.certificate-tag:hover {
+//   background: $buttonHover;
+// }
+
+@import "../../_globalColor";
+
+/* Card image styling */
+.card-image {
+  max-width: 100%;
+  height: auto;
+  width: 460px; /* Ensures images have a maximum width of 460px */
+}
+
+/* Card title styling */
+.card-title {
+  color: $titleColor;
+  font-size: 1.375rem; /* 22px */
+  line-height: 24px;
+  font-weight: 700;
+  margin: 15px 0 0 0;
+}
+
+/* Card subtitle styling */
+.card-subtitle {
+  color: $cardSubtitle;
+  font-size: 1.063rem; /* 17px */
+  line-height: 1.5rem;
+}
+
+/* Certificate card styling */
+.certificate-card {
+  background-color: $lightBackground2;
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid $lightBorder1;
+  transition: all 0.3s ease;
+}
+
+/* Centering content inside the certificate card */
+.certificate-detail-div {
+  text-align: center;
+}
+
+/* Hover effects for the certificate card */
+.certificate-card:hover {
+  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+}
+
+/* Hover effects for dark mode */
+.dark-mode.certificate-card:hover {
+  box-shadow: $achievementCertificateCardHoverDark 0px 20px 30px -10px;
+}
+
+/* Certificate image container styling */
+.certificate-image-div {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for achievement cards */
+.achievement-cards-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+  gap: 1rem; /* Adjust gap between cards */
+}
+
+/* Footer styling for certificate card */
+.certificate-card-footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Styling for certificate tags in the footer */
+.certificate-card-footer span.certificate-tag {
+  background: $buttonColor;
+  color: $lightBackground3;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 4px;
+  display: inline-flex;
+  font-size: 0.75rem; /* 12px */
+  height: 2em;
+  justify-content: center;
+  white-space: nowrap;
+  line-height: 1.5;
+  margin: 0 0.5rem 0.5rem 0;
+  padding: 0 0.75em;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+/* Hover effect for certificate tags */
+span.certificate-tag:hover {
+  background: $buttonHover;
+}
+
+/* Responsive Design for Medium Screens */
+@media (max-width: 1200px) {
+  .achievement-cards-div {
+    grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns */
+  }
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  .achievement-cards-div {
+    grid-template-columns: 1fr; /* Switch to 1 column */
+  }
+}

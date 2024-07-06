@@ -1,0 +1,102 @@
+// @import "../../_globalColor";
+// .card-image {
+//   max-width: 100%;
+//   height: auto;
+//   width: 490px;
+// }
+
+// .achievement-heading {
+//   font-size: 56px;
+//   font-weight: 400;
+//   line-height: normal;
+//   margin: 0px;
+// }
+// .achievement-subtitle {
+//   text-transform: uppercase;
+//   margin: 0px;
+//   margin-bottom: 50px;
+// }
+// .subTitle {
+//   color: $subTitle;
+// }
+
+// /* Media Query */
+// @media (max-width: 1380px) {
+//   .achievement-heading {
+//     font-size: 40px;
+//   }
+// }
+// @media (max-width: 768px) {
+//   .achievement-heading {
+//     font-size: 30px;
+//     text-align: center;
+//   }
+//   .achievement-subtitle {
+//     font-size: 16px;
+//     line-height: normal;
+//     text-align: center;
+//   }
+// }
+
+@import "../../_globalColor";
+
+/* Styling for the project card images */
+.card-image {
+  max-width: 100%;
+  height: auto;
+  width: 490px; /* Specify the width to control the size of the images */
+}
+
+/* Heading and subtitle styling */
+.achievement-heading {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+}
+
+.achievement-subtitle {
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 50px;
+}
+
+.subTitle {
+  color: $subTitle;
+}
+
+/* Projects Container Grid Layout */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for normal screen sizes */
+  gap: 1rem; /* Adjust gap between cards as needed */
+}
+
+/* Media Query for medium screens (below 1380px) */
+@media (max-width: 1380px) {
+  .achievement-heading {
+    font-size: 40px;
+  }
+
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns */
+  }
+}
+
+/* Media Query for small screens (below 768px) */
+@media (max-width: 768px) {
+  .achievement-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .achievement-subtitle {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr; /* Switch to 1 column */
+  }
+}

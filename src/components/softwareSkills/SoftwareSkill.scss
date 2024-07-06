@@ -1,0 +1,107 @@
+// @import "../../_globalColor";
+
+// .dev-icons {
+//   padding-left: 0;
+//   list-style: none;
+//   font-size: 3rem;
+//   margin-bottom: 0px;
+//   margin-top: 0px;
+//   text-align: center;
+// }
+
+// .software-skill-inline {
+//   display: inline-block;
+//   margin-right: 20px;
+//   margin-bottom: 20px;
+// }
+
+// .software-skill-inline > i {
+//   color: $subTitle;
+// }
+
+// .software-skill-inline > i:hover {
+//   color: $skillsColor;
+// }
+// .software-skill-inline > p {
+//   color: $subTitle;
+//   font-size: 10px;
+// }
+// .software-skill-inline > i:hover ~ p {
+//   color: $skillsColor;
+// }
+
+@import "../../_globalColor";
+
+// Main container for the skills
+.dev-icons {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; // Center the items
+}
+
+// Each skill item container
+.software-skill-inline {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s; // Smooth scaling effect on hover
+
+  &:hover {
+    transform: scale(1.1); // Slightly enlarge on hover
+  }
+}
+
+// Styling for the skill icon images
+.software-skill-inline > img {
+  width: 60px; // Set a fixed width for the icons
+  height: 60px; // Set a fixed height for the icons
+  margin-bottom: 5px; // Space between the icon and the text
+  transition: filter 0.3s; // Smooth color transition on hover
+}
+
+// Change the color on hover
+.software-skill-inline > img:hover {
+  filter: brightness(1.2); // Slightly brighten on hover
+}
+
+// Styling for the skill name text
+.software-skill-inline > p {
+  color: $subTitle; // Use the global color variable
+  font-size: 14px; // Larger font size for better readability
+  margin-top: 5px; // Add space between icon and text
+  transition: color 0.3s; // Smooth color transition on hover
+}
+
+// Change the text color when the icon is hovered
+.software-skill-inline > img:hover ~ p {
+  color: $skillsColor; // Change to the skill highlight color
+}
+
+// Media queries for responsiveness
+@media (max-width: 768px) {
+  .software-skill-inline > img {
+    width: 40px; // Smaller icon size for smaller screens
+    height: 40px;
+  }
+  .software-skill-inline > p {
+    font-size: 12px; // Smaller text size for smaller screens
+  }
+}
+
+@media (max-width: 480px) {
+  .software-skill-inline {
+    margin: 5px; // Reduce margin for very small screens
+  }
+  .software-skill-inline > img {
+    width: 30px; // Even smaller icons for very small screens
+    height: 30px;
+  }
+  .software-skill-inline > p {
+    font-size: 10px; // Reduce text size for very small screens
+  }
+}
