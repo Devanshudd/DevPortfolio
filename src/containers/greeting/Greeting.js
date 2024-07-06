@@ -45,7 +45,7 @@ export default function Greeting() {
                     download="Devanshu_SDE.pdf"
                     className="download-link-button"
                   >
-                    <Button text="Download my resume" />
+                    <Button text="Download my cv" />
                   </a>
                 )}
               </div>

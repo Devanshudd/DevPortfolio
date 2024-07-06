@@ -1,4 +1,4 @@
-.splash-container {
+/* .splash-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,4 +20,60 @@
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 20px;
+} */
+
+/* Base styles for the splash screen */
+.splash-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.splash-animation-container {
+  height: 50vh;
+}
+
+.splash-title-container {
+  font-size: 2.5rem;
+  text-decoration: none;
+  text-align: center; /* Center align the text */
+}
+
+.splash-title {
+  font-family: "Agustina Regular", cursive;
+  font-weight: bold;
+  font-variant-ligatures: no-common-ligatures;
+  -webkit-font-variant-ligatures: no-common-ligatures;
+  padding: 0 20px;
+}
+
+/* Media Queries for responsive design */
+
+/* For screens less than 768px (Tablets and smaller devices) */
+@media (max-width: 768px) {
+  .splash-animation-container {
+    height: 40vh; /* Decrease the height for smaller screens */
+  }
+
+  .splash-title-container {
+    font-size: 2rem; /* Reduce font size */
+    margin-top: 20px; /* Add some margin for better spacing */
+  }
+}
+
+/* For screens less than 480px (Mobile devices) */
+@media (max-width: 480px) {
+  .splash-animation-container {
+    height: 30vh; /* Further decrease the height for mobile screens */
+  }
+
+  .splash-title-container {
+    font-size: 1.5rem; /* Further reduce font size */
+  }
+
+  .splash-title {
+    padding: 0 10px; /* Reduce padding */
+  }
 }

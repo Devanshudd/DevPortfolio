@@ -154,3 +154,12 @@
     font-size: 16px;
   }
 }
+
+/* Adding only spacing between bullets */
+.experience-bullets-list {
+  padding-left: 20px; /* Optional for alignment */
+}
+
+.experience-bullet {
+  margin-bottom: 10px; /* Space between each bullet point */
+}
