@@ -26,8 +26,6 @@ https://github.com/Devanshudd/DevPortfolio/assets/100607040/2f1b6339-9974-439a-a
 ## Technologies Used 
 
 - [React](https://reactjs.org/)
-- [graphql](https://graphql.org/)
-- [apollo-boost](https://www.apollographql.com/docs/react/get-started/)
 - [react-twitter-embed](https://github.com/saurabhnemade/react-twitter-embed)
 - [react-easy-emoji](https://github.com/appfigures/react-easy-emoji)
 - [react-headroom](https://github.com/KyleAMathews/react-headroom)
@@ -52,9 +50,7 @@ https://github.com/Devanshudd/DevPortfolio/assets/100607040/2f1b6339-9974-439a-a
 ✔️ Work Experience\
 ✔️ Big Projects\
 ✔️ Achievements And Certifications 🏆\
-✔️ Podcast\
 ✔️ Contact me\
-✔️ Twitter Timeline\
 ✔️ GitHub Profile
 
 To view a live example, **[click here](https://devanshuportfolio.vercel.app/)**.
