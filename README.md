@@ -1,20 +1,27 @@
-# Software Developer Folio ⚡️ [![GitHub](https://img.shields.io/github/license/saadpasta/developer-portfolio?color=blue)](https://github.com/saadpasta/developerFolio/blob/master/LICENSE) [![GitHub stars](https://img.shields.io/github/stars/saadpasta/developerFolio)](https://github.com/saadpasta/developerFolio/stargazers)  [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
-
+# Software Developer Folio ⚡️ 
 ## A clean, beautiful and responsive portfolio template for Developers!
 
 
 <p align="center">
-  <kbd>
-<img src="https://user-images.githubusercontent.com/53429438/106779355-e9cd9e80-666c-11eb-9417-8a4b54441bc6.gif"></img>
-  </kbd>
+
+
+
+
+
+https://github.com/Devanshudd/DevPortfolio/assets/100607040/2f1b6339-9974-439a-a8d6-4993d6138bba
+
+
+
+
+
+
+
+
 </p>
 
 
-Just change `src/portfolio.js` to get your personal portfolio. Customize portfolio theme by using your own color scheme globally in the  `src/_globalColor.scss` file. Feel free to use it as-is or personalize it as much as you want.
+#Just change `src/portfolio.js` to get your personal portfolio. Customize portfolio theme by using your own color scheme globally in the  `src/_globalColor.scss` file. Feel free to use it as-is or personalize it as much as you want.
 
-If you'd like to **contribute** and make this much better for other users, have a look at [Issues](https://github.com/saadpasta/developerFolio/issues).
-
-Created something awesome for your fork of the portfolio and want to share it? Feel free to open a [pull request](https://github.com/saadpasta/developerFolio/pulls).
 
 ## Table of Contents
 - [Sections](#sections)
@@ -28,6 +35,7 @@ Created something awesome for your fork of the portfolio and want to share it? F
 - [Illustrations](#illustrations)
 - [For the Future](#for-the-future)
 - [Contributors](#project-maintainers)
+
 
 ## Portfolio Sections
 ✔️ Summary and About me\
@@ -44,7 +52,7 @@ Created something awesome for your fork of the portfolio and want to share it? F
 ✔️ Twitter Timeline\
 ✔️ GitHub Profile
 
-To view a live example, **[click here](https://developerfolio.js.org/)**.
+To view a live example, **[click here](https://devanshuportfolio.vercel.app/)**.
 
 
 ## Getting Started
@@ -58,13 +66,6 @@ node@v10.16.0 or higher
 npm@6.9.0 or higher
 git@2.17.1 or higher
 ```
-### Docker Commands
-
-```
-1) BUILD IMAGE : docker build -t developerfolio:latest .
-2) RUN IMAGE: docker run -t -p 3000:3000 developerfolio:latest
-```
-
 
 ## How To Use 
 
