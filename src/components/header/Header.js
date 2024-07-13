@@ -8,7 +8,7 @@ import {
   workExperiences,
   skillsSection,
   // openSource,
-  // blogSection,
+  blogSection,
   techStack,
   // talkSection,
   achievementSection,
@@ -24,7 +24,7 @@ function Header() {
   const ViewEducation = techStack;
   const viewSkills = skillsSection.display;
   const viewAchievement = achievementSection.display;
-  // const viewBlog = blogSection.display;
+  const viewBlog = blogSection.display;
   // const viewTalks = talkSection.display;
   const viewResume = true;
 
@@ -71,11 +71,12 @@ function Header() {
             </li>
           )}
 
-          {/* {viewBlog && (
+          {viewBlog && (
             <li>
               <a href="#blogs">Blogs</a>
             </li>
           )}
+          {/*           
           {viewTalks && (
             <li>
               <a href="#talks">Talks</a>
