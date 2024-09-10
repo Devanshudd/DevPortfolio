@@ -3,36 +3,60 @@
 .main {
   width: 90%;
   padding: 20px 10px;
-  margin: 0px auto;
+  margin: 0 auto;
   margin-top: 4rem;
+
+  @media (max-width: 320px) {
+    width: 100%;
+    padding: 15px 5px;
+  }
 }
+
 .greet-main {
   width: 90%;
   padding: 20px 10px;
-  margin: 0px auto;
+  margin: 0 auto;
   margin-top: 2rem;
+
+  @media (max-width: 320px) {
+    width: 100%;
+    padding: 15px 5px;
+  }
 }
 
 .greeting-main {
   display: flex;
+  flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+
+  @media (max-width: 768px) {
+    display: block; /* Stack elements vertically */
+  }
+}
+
+.greeting-main > * {
+  flex: 1;
+  margin-bottom: 30px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
 }
 
 .subTitle {
   color: $subTitle !important;
 }
 
-.greeting-main {
-  display: flex;
-}
-
-.greeting-main > * {
-  flex: 1;
-  margin-bottom: 30px;
-}
 .button-greeting-div {
   display: flex;
+  flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
   margin-top: 20px;
+  gap: 10px; /* Adds space between buttons */
+
+  @media (max-width: 768px) {
+    justify-content: center; /* Center buttons on smaller screens */
+  }
 }
+
 .download-link-button {
   text-decoration: none;
 }
@@ -41,16 +65,48 @@
   font-size: 70px;
   line-height: 1.1;
   color: $textColor !important;
+
+  @media (max-width: 1380px) {
+    font-size: 50px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.2;
+  }
 }
 
 .greeting-text-p {
   font-size: 30px;
   line-height: 40px;
+
+  @media (max-width: 1380px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
 }
 
-.greeting-image-div > img {
-  max-width: 100%;
-  height: auto;
+.greeting-image-div {
+  display: flex;
+  justify-content: center; /* Center the image on all screen sizes */
+  width: 100%;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    height: auto; /* Allows image to adjust based on content */
+    margin-top: 20px;
+  }
 }
 
 .wave-emoji {
@@ -85,7 +141,7 @@
   }
 }
 
-/* Media Query */
+/* Adjustments for Medium Screens */
 @media (max-width: 1380px) {
   .greeting-text {
     font-size: 50px;
@@ -94,29 +150,37 @@
     font-size: 20px;
   }
 }
+
+/* Adjustments for Tablets and Smaller Devices */
 @media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
-  }
-  .greeting-text {
-    font-size: 30px;
-    text-align: center;
-  }
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
-    text-align: center;
-  }
   .greeting-main {
     display: block;
   }
+
+  .button-greeting-div {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons */
+    gap: 15px; /* Increase spacing for better touch targets */
+  }
+
   .greeting-image-div {
-    height: 256px;
+    margin-top: 20px; /* Add spacing for better flow */
   }
 }
 
+/* Small Mobile Devices */
 @media (max-width: 320px) {
   .main {
-    width: auto;
+    width: 100%;
+    padding: 15px 5px; /* Adjust padding for very small screens */
+  }
+
+  .greeting-text {
+    font-size: 24px;
+  }
+
+  .greeting-text-p {
+    font-size: 14px;
+    line-height: 1.5;
   }
 }

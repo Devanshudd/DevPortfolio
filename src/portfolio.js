@@ -358,6 +358,50 @@ const bigProjects = {
       }
     },
     {
+      image: require("./assets/images/portfolio/AP1.png"),
+      projectName: "API Processing",
+      projectDesc:
+        "Validates the CSV data, processes the images asynchronously by compressing them, and stores the processed data along with associated product information in a database.",
+      _footerLink: [
+        {
+          name: "Output File",
+          url: "https://github.com/Devanshudd/Api_Processing/blob/main/Output_Screenshots.pdf"
+        },
+        {
+          name: "⭐Star Me On Github ",
+          url: "https://github.com/Devanshudd/Api_Processing"
+        }
+      ],
+      get footerLink() {
+        return this._footerLink;
+      },
+      set footerLink(value) {
+        this._footerLink = value;
+      }
+    },
+    {
+      image: require("./assets/images/portfolio/DFB2.png"),
+      projectName: "Dynamic Form Builder",
+      projectDesc:
+        "A web application that allows users to create and manage forms dynamically.",
+      _footerLink: [
+        {
+          name: "Visit Website",
+          url: "dynamic-form-react.vercel.app/"
+        },
+        {
+          name: "⭐Star Me On Github ",
+          url: "https://github.com/Devanshudd/Dynamic_Form"
+        }
+      ],
+      get footerLink() {
+        return this._footerLink;
+      },
+      set footerLink(value) {
+        this._footerLink = value;
+      }
+    },
+    {
       image: require("./assets/images/portfolio/teegen.png"),
       projectName: "Tee Genius",
       projectDesc:
@@ -506,7 +550,6 @@ const achievementSection = {
         }
       ]
     },
-
     {
       title: "HACKERRANK REACT CERTIFICATE",
       subtitle: "Completed Certifcation from Hackerank for React ",
@@ -516,6 +559,42 @@ const achievementSection = {
         {
           name: "View Certificate",
           url: "https://www.hackerrank.com/certificates/03715925a29a"
+        }
+      ]
+    },
+    {
+      title: "INTRODUCTION TO CAREER SKILLS IN SOFTWARE DEVELOPMENT",
+      subtitle: "LinkedIn Learning Certificate of Completion",
+      image: require("./assets/images/Certificates/LK2.png"),
+      imageAlt: "PWA Logo",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.linkedin.com/learning/certificates/d62d1228873db8af855932b15642f677a328c00d2c05303aa673fa260e89f99f"
+        }
+      ]
+    },
+    {
+      title: "Basics on Information Security, Cyber Security and Privacy",
+      subtitle: "Bosch Certificate of Completion",
+      image: require("./assets/images/Certificates/Bosch.png"),
+      imageAlt: "PWA Logo",
+      footerLink: [
+        {
+          name: "View Certificate"
+          // url: "https://www.linkedin.com/learning/certificates/d62d1228873db8af855932b15642f677a328c00d2c05303aa673fa260e89f99f"
+        }
+      ]
+    },
+    {
+      title: "Handling of Codex Concerns",
+      subtitle: "Bosch Certificate of Completion",
+      image: require("./assets/images/Certificates/Bosch1.png"),
+      imageAlt: "PWA Logo",
+      footerLink: [
+        {
+          name: "View Certificate"
+          //url: "https://www.linkedin.com/learning/certificates/d62d1228873db8af855932b15642f677a328c00d2c05303aa673fa260e89f99f"
         }
       ]
     },
