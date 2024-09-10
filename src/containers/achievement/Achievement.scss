@@ -1,63 +1,25 @@
-// @import "../../_globalColor";
-// .card-image {
-//   max-width: 100%;
-//   height: auto;
-//   width: 490px;
-// }
-
-// .achievement-heading {
-//   font-size: 56px;
-//   font-weight: 400;
-//   line-height: normal;
-//   margin: 0px;
-// }
-// .achievement-subtitle {
-//   text-transform: uppercase;
-//   margin: 0px;
-//   margin-bottom: 50px;
-// }
-// .subTitle {
-//   color: $subTitle;
-// }
-
-// /* Media Query */
-// @media (max-width: 1380px) {
-//   .achievement-heading {
-//     font-size: 40px;
-//   }
-// }
-// @media (max-width: 768px) {
-//   .achievement-heading {
-//     font-size: 30px;
-//     text-align: center;
-//   }
-//   .achievement-subtitle {
-//     font-size: 16px;
-//     line-height: normal;
-//     text-align: center;
-//   }
-// }
-
 @import "../../_globalColor";
 
 /* Styling for the project card images */
 .card-image {
   max-width: 100%;
   height: auto;
-  width: 490px; /* Specify the width to control the size of the images */
+  width: 100%; /* Set width to 100% for full responsiveness */
+  max-width: 490px; /* Control the max size of the images */
+  object-fit: cover; /* Ensures the image covers its container */
 }
 
 /* Heading and subtitle styling */
 .achievement-heading {
-  font-size: 56px;
+  font-size: 3.5rem; /* Scales for better responsiveness */
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.2; /* Adjust line-height for readability */
   margin: 0px;
 }
 
 .achievement-subtitle {
   text-transform: uppercase;
-  margin: 0px;
+  margin: 0;
   margin-bottom: 50px;
 }
 
@@ -69,13 +31,13 @@
 .projects-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns for normal screen sizes */
-  gap: 1rem; /* Adjust gap between cards as needed */
+  gap: 1rem; /* Adjust gap between cards */
 }
 
-/* Media Query for medium screens (below 1380px) */
+/* Media Query for large screens (below 1380px) */
 @media (max-width: 1380px) {
   .achievement-heading {
-    font-size: 40px;
+    font-size: 2.5rem; /* Reduced size for large tablets or small desktops */
   }
 
   .projects-container {
@@ -83,20 +45,58 @@
   }
 }
 
-/* Media Query for small screens (below 768px) */
-@media (max-width: 768px) {
+/* Media Query for medium screens (below 1024px) */
+@media (max-width: 1024px) {
   .achievement-heading {
-    font-size: 30px;
+    font-size: 2rem; /* Further reduce heading size for medium screens */
     text-align: center;
   }
 
   .achievement-subtitle {
-    font-size: 16px;
-    line-height: normal;
+    font-size: 1.125rem; /* Adjust subtitle size */
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr 1fr; /* Keep 2 columns for wider tablets */
+  }
+}
+
+/* Media Query for small screens (below 768px) */
+@media (max-width: 768px) {
+  .achievement-heading {
+    font-size: 1.875rem; /* Smaller heading for mobile devices */
+    text-align: center;
+  }
+
+  .achievement-subtitle {
+    font-size: 1rem; /* Adjust subtitle size */
+    line-height: 1.2;
     text-align: center;
   }
 
   .projects-container {
     grid-template-columns: 1fr; /* Switch to 1 column */
+  }
+}
+
+/* Media Query for extra small screens (below 480px) */
+@media (max-width: 480px) {
+  .achievement-heading {
+    font-size: 1.5rem; /* Smaller font size for extra small screens */
+  }
+
+  .achievement-subtitle {
+    font-size: 0.875rem; /* Smaller subtitle size */
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr; /* Keep 1 column */
+    gap: 0.5rem; /* Reduce gap for extra small screens */
+  }
+
+  .card-image {
+    height: auto; /* Allow images to scale naturally */
   }
 }
