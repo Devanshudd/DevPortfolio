@@ -88,7 +88,7 @@ function Header() {
           </li>
           {viewResume && (
             <li>
-              <a href="https://drive.google.com/file/d/1DuuKqOKqGtiBVKwjLt6yLUJoYT7gT_u2/view">
+              <a href="https://drive.google.com/file/d/1_xp5nJLQJlzcPIb9jOnlhSJ3rSsnCskg/view">
                 Resume
               </a>
             </li>

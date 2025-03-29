@@ -243,30 +243,36 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Software Development Engineer (IC2)",
+      company: "Avalara Private Technology Limited",
+      companylogo: require("./assets/images/Avalara.png"),
+      date: "october 2024 – Present",
+      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      descBullets: [
+        "Contributed to Avalara’s Unified UI platform, ensuring a seamless experience across User Management and Company Management.",
+        "Built and maintained 30+ reusable components with TypeScript, React.js, and Skylab CSS, reducing development time by 40% and ensuring design consistency.",
+        "Implemented Redux for state management, optimizing data flow and boosting performance, scalability, and maintainability.",
+        "Developed custom React hooks to streamline API interactions and reduce redundant calls, improving system efficiency by 20%.",
+        "Integrated APIs using Swagger and Node.js, enhancing response times by 25%, resulting in a more responsive and scalable platform.",
+        "Ensured high code quality with Vitest (95%+ test coverage) and automated testing on BrowserStack, cutting post-deployment bugs by 50%.",
+        "Enabled seamless real-time access for thousands of businesses managing their tax compliance, with ongoing user feedback driving continuous improvements."
+      ]
+    },
+    {
       role: "Senior Software Engineer",
       company: "Bosch Global Software Technolgies",
       companylogo: require("./assets/images/bosch123.jpeg"),
-      date: "July 2023 – Present",
+      date: "June 2022 – Present",
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
         "Contributed to the development of Bosch’s Hiring Portal, a robust SaaS platform designed to streamline the recruitment process for businesses and organizations",
         "Spearheaded and maintained responsive user interfaces using HTML, CSS, JavaScript, React.js, and Material-UI .Implemented real-time notifications for application statuses, interview schedules, and feedback to enhance user experience with timely updates and communication",
         "Collaborated closely with the product team to understand and translate user requirements into practical frontend features, which improved the recruitment workflow and candidate management experience",
-        "Used Node.js for back-end development to build efficient API endpoints that enable real-time data fetching and integration with third-party services, boosting the portal’s performance and scalability"
-      ]
-    },
-    {
-      role: "Project Trainee",
-      company: "Bosch Global Software Technolgies",
-      companylogo: require("./assets/images/bosch123.jpeg"),
-      date: "June 2022 – April 2023",
-      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      descBullets: [
-        "Migrated the graphical user interface for the DOL Player, an application for the analysis of automated driving,from QT to React with Material-UI",
-        "Developed a sophisticated resume parsing tool utilizing Python and this innovative tool boasts the capability to extract critical information from a wide range of resume formats,  significantly reducing the burden of manual review during the hiring process",
-        "By leveraging automation and intelligent algorithms, it achieves a remarkable 60% reduction in the time required for manual review and it  actively improves the quality of candidate selection by achieving a 30% improvement in screening accuracy. "
+        "Used Node.js for back-end development to build efficient API endpoints that enable real-time data fetching and integration with third-party services, boosting the portal’s performance and scalability",
+        "Developed a sophisticated resume parsing tool utilizing Python and this innovative tool boasts the capability to extract critical information from a wide range of resume formats,  significantly reducing the burden of manual review during the hiring process"
       ]
     }
+
     // {
     //   role: "Software Engineer Intern",
     //   company: "Airbnb",
